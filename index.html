@@ -23,7 +23,7 @@
       
     <!-- Enlace a nuestro archivo de estilos CSS personalizado -->
     <link rel="stylesheet" href="./css/style.css">
-  
+    
 </head>
 <body>
     <!-- Comienzo del encabezado de la página -->
@@ -31,15 +31,22 @@
         <!-- Menú de navegación principal -->
         <nav class="navbar sticky-top">
             <!-- La clase 'sticky-top' hace que el menú se quede fijo en la parte superior al hacer scroll -->
-            <a href="./pages/quienes_somos.html">
+            <div>
                 <!-- Sección izquierda del menú con el logo y el título -->
                 <div class="nav_inicio">
                     <!-- Logo de la empresa -->
                     <img src="./image/logo.jpg" class="Logo" alt="Logo de hop">
                     <!-- Título o nombre de la empresa -->
-                    <h1 class="Titulo">Talento Tech</h1>
+                    <h1 class="Titulo"><a href="./pages/quienes_somos.html">Talento Tech</a></h1>
                 </div>
-            </a>
+            </div>
+             <!-- Control de audio con autoplay -->
+             <audio id="audio" autoplay controls>
+                <!-- Ruta del archivo de audio -->
+                <source src="./audio/audio.mp3" type="audio/mpeg">
+                Tu navegador no soporta la reproducción de audio.
+               </audio>
+
             <!-- Sección derecha del menú con iconos -->
             <div class="nav_inicio iconos">
                 <!-- Icono del carrito de compras -->
@@ -144,7 +151,6 @@
                     </div>
                 </div>
        
-
                          <!-- Tarjeta de producto -->
             <div class="card" style="width: 18rem;">
               <!-- Imagen del producto -->
@@ -246,5 +252,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Script para los iconos de Boxicons -->
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-</body>
+    <!-- Script para configurar el volumen -->
+    <script>
+    // Seleccionar el elemento de audio
+    const audioElement = document.getElementById('audio');
+    // Configurar el volumen inicial al 9%
+    audioElement.volume = 0.09;
+     </script>
+ </body>
 </html>
