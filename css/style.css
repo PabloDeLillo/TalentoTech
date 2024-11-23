@@ -11,6 +11,10 @@ a{
     width: 80%;
     margin: 0 auto; /* Centrar el texto en la página */
 }
+
+.reseñatxt {
+    margin: 0 auto; /* Centrar el texto en la página */
+}
 /* Estilos para el menú de navegación */
 nav {
     background-color: #343a40; /* Color de fondo oscuro */
@@ -42,12 +46,12 @@ nav {
 
 /* Estilos para los iconos en el menú */
 .iconos a {
-    margin-left: 15px; /* Espacio entre los iconos */
+    margin-right: 15px; /* Espacio entre los iconos */
 }
 
 /* Estilos para el carrusel */
 .carousel {
-    margin-top: 20px; /* Espacio superior antes del carrusel */
+    margin-top: 1px; /* Espacio superior antes del carrusel */
 }
 
 .carousel-item img {
@@ -169,4 +173,36 @@ footer .RSocial {
     footer a {
         font-size: 16px;
     }
+}
+
+/* Contenedor de reseñas */
+.reseña {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas en pantallas grandes */
+    gap: 10px;
+    margin-top: 10px;
+    width: 80%;
+    margin: 0 auto; /* Centrar el texto en la página */
+}
+
+/* Estilos de card de reseña */
+.reseñacard {
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: left;
+}
+
+/* Estilos para textos nombre */
+.reseñacard p:first-child {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para el texto reseña */
+.reseñacard p:nth-child(2) {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 15px;
 }
