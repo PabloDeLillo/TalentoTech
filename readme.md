@@ -61,4 +61,8 @@ Pantallas pequeñas (celulares):
 Hacemos ajustes adicionales para asegurar que todo el contenido se vea correctamente en pantallas pequeñas.
 Reducimos tamaños de fuente e imágenes para mejorar la legibilidad.
 
+inserte audio mp3 como multimedia en el header de la página.
+
+Requerimiento de la preentrega: https://docs.google.com/presentation/d/1TdMcdP0NhqFmGk_jdpuZBWyDIUvwJheZO5O6M075tMk/edit#slide=id.g2d37814b3e8_0_0
+
 Comentarios en el código
